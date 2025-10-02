@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  /* Link normal */
+  .link {
+    color: blue;
+    text-decoration: underline;
+    font-size: 1.2rem;
+  }
+  
+  /* Botão estilizado (na verdade é um link com cara de botão) */
+  .botao {
+    display: inline-block;
+    background: #0d6efd;   /* azul */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none; /* remove o sublinhado */
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .botao:hover {
+    background: #084298; /* azul mais escuro no hover */
+  }
+  

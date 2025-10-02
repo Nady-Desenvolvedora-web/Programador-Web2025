@@ -1,0 +1,141 @@
+/* Estilos Gerais da Página */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contêiner principal para centralizar e posicionar o pincel */
+.animation-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px; /* Ajuste a largura conforme necessário */
+  height: 150px; /* Ajuste a altura conforme necessário */
+}
+
+/* Estilos do nome "CriArt" */
+.criart-container {
+  display: flex;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #14a6a6;
+  letter-spacing: -5px;
+  line-height: 1;
+}
+
+/* Estilos de cada letra individualmente */
+.letter_ {
+  color: #14a6a6;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeInLetter 0.1s forwards linear;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.letter__ {
+  color:#F26B55;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeInLetter 0.1s forwards linear;
+  font-size: 5rem;
+  font-weight: bold;
+}
+/* Pseudo-elemento que age como a "barra de escrita" */
+.letter::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform-origin: left;
+  
+  animation: reveal 0.5s forwards ease-out;
+}
+
+/* Sincroniza a animação de cada letra e sua barra */
+.letter:nth-child(1) { animation-delay: 0.4s; }
+.letter:nth-child(1)::after { animation-delay: 0.4s; }
+
+.letter:nth-child(2) { animation-delay: 1.2s; }
+.letter:nth-child(2)::after { animation-delay: 1.2s; }
+
+.letter:nth-child(3) { animation-delay: 1.9s; }
+.letter:nth-child(3)::after { animation-delay: 1.9s; }
+
+.letter:nth-child(4) { animation-delay: 2.6s; }
+.letter:nth-child(4)::after { animation-delay: 2.6s; }
+
+.letter:nth-child(5) { animation-delay: 3.3s; }
+.letter:nth-child(5)::after { animation-delay: 3.3s; }
+
+.letter:nth-child(6) { animation-delay: 4s; }
+.letter:nth-child(6)::after { animation-delay: 4s; }
+
+/* Keyframes para a animação da barra de revelação */
+@keyframes reveal {
+  to {
+      width: 0;
+  }
+}
+
+/* Keyframes para a letra aparecer antes da barra sumir */
+@keyframes fadeInLetter {
+  to {
+      opacity: 1;
+  }
+}
+
+
+/* Estilos e Animação do Pincel */
+.img-pincel {
+  position: absolute;
+  width: 200px; /* Ajuste o tamanho da sua imagem aqui */
+  height: 50px; /* Ajuste o tamanho da sua imagem aqui */
+  z-index: 10; /* Garante que o pincel fique acima do texto */
+  opacity: 0; /* Começa invisível */
+  
+  
+  /* Animação completa do pincel */
+  animation: 
+      fadeInPincel 0.1s forwards linear 1s, /* Aparece rapidamente */
+      movePincel 4.5s forwards ease-in-out 1s, /* Move sobre o texto */
+      movePincelDown 1s forwards ease-out 6s; /* Desce e para abaixo do texto */
+}
+
+/* Keyframes para o pincel aparecer */
+@keyframes fadeInPincel {
+  to {
+      opacity: 0.9; /* Fica visível */
+  }
+}
+
+/* Keyframes para o pincel se mover sobre o texto */
+@keyframes movePincel {
+  0% { transform: translate(-250px, -10px); } 
+  17% { transform: translate(-200px, -10px); }
+  30% { transform: translate(-180px, -10px); }
+  45% { transform: translate(-40px, -20px); }
+  63% { transform: translate(60px, -8px); } 
+  79% { transform: translate(100px, -20px); }
+  100% { transform: translate(160px, -20px); } 
+}
+
+/* Keyframes para o pincel descer e ficar abaixo do texto */
+@keyframes movePincelDown {
+  from { 
+      transform: translate(50px, -20px); /* Posição final da animação anterior */
+  }
+  to { 
+      transform: translate(20px, 60px); /* Posição abaixo do texto */
+  }
+}
