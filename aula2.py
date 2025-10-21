@@ -18,9 +18,27 @@ def aplicar_desconto(preco, percentual):
 print(aplicar_desconto(80, 10))
 '''
 
+'''
 def celsius_para_fahrenheit(celsius):
     fahrenheit = (celsius * 9/5) + 32
     return fahrenheit
 
 x = int(input())
 print(celsius_para_fahrenheit(x))
+'''
+
+'''
+idade = 16
+if idade >=18:
+    print("pode dirigir")
+else:
+    print("ainda não pode dirigir")
+'''
+
+'''
+nota = 8
+if nota >= 9:
+    print("Exelente!)
+elif nota >= 7:
+    print("Bom!")
+'''
