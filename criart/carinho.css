@@ -1,0 +1,165 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f3f3f3;
+}
+
+/* Cabeçalho */
+.topo {
+    background: linear-gradient(180deg, #f1b545, #be8f36, #8b6828);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.busca {
+    display: flex;
+    align-items: center;
+}
+
+.busca input {
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+}
+
+.btn-busca, .btn-conta {
+    margin-left: 10px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Menu */
+.menu {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.menu button {
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu button:hover {
+    background: #ffcf7d;
+}
+
+/* Conteúdo */
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+/* Lista de produtos */
+.produtos {
+    width: 60%;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    background: #f0e8df;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.item .info {
+    flex-grow: 1;
+}
+
+.item .info p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.item .info a {
+    color: #a52a2a;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.item .preco {
+    font-weight: bold;
+}
+
+/* Resumo do carrinho */
+.resumo {
+    width: 30%;
+    background: #045d63;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.resumo h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.cupom {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.cupom input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.finalizar {
+    width: 100%;
+    background: #f1a536;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.finalizar:hover {
+    background: #ffb94d;
+}

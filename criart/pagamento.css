@@ -1,0 +1,203 @@
+/* ---------- Estilos Gerais ---------- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00a0a8;
+}
+
+/* ---------- Cabeçalho ---------- */
+header {
+    background: linear-gradient(to bottom, #e5a543, #a0702f);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-cart input {
+    border-radius: 20px;
+    padding: 8px 12px;
+    width: 250px;
+    border: none;
+    outline: none;
+}
+
+.search-cart i {
+    font-size: 18px;
+    color: #4a4a4a;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.search-cart i:hover {
+    color: #000;
+}
+
+/* ---------- Menu ---------- */
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 20px;
+}
+
+nav a {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #f1a13a;
+    color: white;
+}
+
+/* ---------- Conteúdo principal ---------- */
+.conteudo {
+    padding: 40px 0;
+    background-color: #007980;
+    text-align: center;
+}
+
+/* ---------- Seção do produto ---------- */
+.produto-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.imagem-produto {
+    background-color: #f18774;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px #004c50;
+}
+
+.imagem-produto img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* ---------- QR Code e Pagamento ---------- */
+.pagamento {
+    background-color: #00a0a8;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px #004c50;
+    width: 250px;
+    text-align: center;
+    color: #fff;
+}
+
+.qrcode {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.valor {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.pagamento ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.pagamento ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.btn-copiar {
+    background-color: white;
+    color: #004c50;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-copiar:hover {
+    background-color: #e5a543;
+    color: white;
+}
+
+/* ---------- Descrição ---------- */
+.descricao {
+    color: white;
+    margin-top: 10px;
+}
+
+.descricao h3 {
+    margin: 0;
+}
+
+.descricao span {
+    font-weight: normal;
+}
+
+.avaliacao {
+    color: #ffd700;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* ---------- Recomendações ---------- */
+.recomendacoes {
+    margin-top: 40px;
+}
+
+.recomendacoes h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.produtos-recomendados {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.produtos-recomendados img {
+    width: 100px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.produtos-recomendados img:hover {
+    transform: scale(1.1);
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+    text-align: center;
+    padding: 15px;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+}
